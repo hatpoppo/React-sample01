@@ -3,6 +3,7 @@ import logo from './logo.svg'
 import './App.css'
 import './components/Hello'
 import Hello from './components/Hello'
+import Message from './components/Message'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           Learn React
         </a>
         <Hello></Hello>
+        <Message content='こんにちは'></Message>
       </header>
     </div>
   )
