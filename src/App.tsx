@@ -5,6 +5,7 @@ import './components/Hello'
 import Hello from './components/Hello'
 import Message from './components/Message'
 import Parent from './components/ContainerSample'
+import Page from './components/ContextSample'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Hello></Hello>
         <Message content='こんにちは'></Message>
         <Parent></Parent>
+        <Page></Page>
       </header>
     </div>
   )
