@@ -9,6 +9,7 @@ const Counter = (props: CounterProps) => {
   return (
     <div>
       <p>Count:{count}</p>
+      <button onClick={() => setCount(initialValue)}>リセット</button>
       <button
         onClick={() => {
           setCount(count + 1)
