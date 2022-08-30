@@ -6,6 +6,7 @@ import Hello from './components/Hello'
 import Message from './components/Message'
 import Parent from './components/ContainerSample'
 import Page from './components/ContextSample'
+import Counter from './components/Counter'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Message content='こんにちは'></Message>
         <Parent></Parent>
         <Page></Page>
+        <Counter initialValue={1}></Counter>
       </header>
     </div>
   )
