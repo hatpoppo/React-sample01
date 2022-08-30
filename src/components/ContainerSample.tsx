@@ -1,4 +1,8 @@
-const Container = (props: { title: string; children: React.ReactElement }) => {
+type ContainerProps = {
+  title: string
+  children: React.ReactNode
+}
+const Container = (props: ContainerProps) => {
   const { title, children } = props
   return (
     <div style={{ background: 'red' }}>
