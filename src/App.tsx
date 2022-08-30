@@ -4,6 +4,7 @@ import './App.css'
 import './components/Hello'
 import Hello from './components/Hello'
 import Message from './components/Message'
+import Parent from './components/ContainerSample'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         </a>
         <Hello></Hello>
         <Message content='こんにちは'></Message>
+        <Parent></Parent>
       </header>
     </div>
   )
