@@ -8,6 +8,7 @@ import Parent from './components/ContainerSample'
 import Page from './components/ContextSample'
 import Counter from './components/Counter'
 import CounterWithReducer from './components/CounterWithReducer'
+import MemoSample from './components/MemoSample'
 function App() {
   return (
     <div className='App'>
@@ -33,6 +34,7 @@ function App() {
         <Page></Page>
         <Counter initialValue={1}></Counter>
         <CounterWithReducer initialValue={0}></CounterWithReducer>
+        <MemoSample></MemoSample>
       </header>
     </div>
   )
