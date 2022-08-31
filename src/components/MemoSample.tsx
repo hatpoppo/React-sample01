@@ -1,4 +1,4 @@
-import React, { memo, useState } from 'react'
+import React, { memo, useState, useCallback } from 'react'
 type FizzProps = {
   isFizz: boolean
 }
@@ -22,9 +22,9 @@ const Parent = () => {
   const isFizz = count % 3 === 0
   const isBazz = count % 5 === 0
   console.log(`Parentが再描画されました。count=${count}`)
-  const onBazzClick = () => {
+  const onBazzClick = useCallback(() => {
     console.log(`Bazzが再描画されました。isFizz=${isBazz}`)
-  }
+  }, [])
   return (
     <div>
       <button onClick={() => setCount((c) => c + 1)}>+1</button>
