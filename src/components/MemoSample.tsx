@@ -9,25 +9,31 @@ const Fizz = (props: FizzProps) => {
 }
 type BazzProps = {
   isBazz: boolean
+  onClick: () => void
 }
 const Bazz = memo<BazzProps>((props) => {
-  const { isBazz } = props
+  const { isBazz, onClick } = props
 
   console.log(`Bazzが再描画されました。isFizz=${isBazz}`)
-  return <span>{isBazz ? 'Bazz' : ''}</span>
+  return <span onClick={onClick}>{isBazz ? 'Bazz' : ''}</span>
 })
 const Parent = () => {
   const [count, setCount] = useState(1)
   const isFizz = count % 3 === 0
   const isBazz = count % 5 === 0
   console.log(`Parentが再描画されました。count=${count}`)
+  const onBazzClick = () => {
+    console.log(`Bazzが再描画されました。isFizz=${isBazz}`)
+  }
   return (
     <div>
       <button onClick={() => setCount((c) => c + 1)}>+1</button>
       <p> {`現在のカウント：${count}`} </p>
       <p>
         <Fizz isFizz={isFizz}></Fizz>
-        <Bazz isBazz={isBazz}></Bazz>
+        <Bazz
+          isBazz={isBazz}
+          onClick={onBazzClick}></Bazz>
       </p>
     </div>
   )
