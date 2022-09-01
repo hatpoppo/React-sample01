@@ -10,6 +10,7 @@ import Counter from './components/Counter'
 import CounterWithReducer from './components/CounterWithReducer'
 import MemoSample from './components/MemoSample'
 import Title from './components/UseEffectSample'
+import RefSample from './components/RefSample'
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <CounterWithReducer initialValue={0}></CounterWithReducer>
         <MemoSample></MemoSample>
         <Title></Title>
+        <RefSample></RefSample>
       </header>
     </div>
   )
