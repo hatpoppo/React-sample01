@@ -1,13 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 const TitleContext = React.createContext('')
 const Title = () => {
-  return (
-    <TitleContext.Consumer>
-      {(title) => {
-        return <h1>{title}</h1>
-      }}
-    </TitleContext.Consumer>
-  )
+  const title = useContext(TitleContext)
+  return <h1>{title}</h1>
 }
 const Header = () => {
   return <Title></Title>
