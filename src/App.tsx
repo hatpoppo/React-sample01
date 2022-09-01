@@ -9,6 +9,8 @@ import Page from './components/ContextSample'
 import Counter from './components/Counter'
 import CounterWithReducer from './components/CounterWithReducer'
 import MemoSample from './components/MemoSample'
+import Title from './components/UseEffectSample'
+
 function App() {
   return (
     <div className='App'>
@@ -35,6 +37,7 @@ function App() {
         <Counter initialValue={1}></Counter>
         <CounterWithReducer initialValue={0}></CounterWithReducer>
         <MemoSample></MemoSample>
+        <Title></Title>
       </header>
     </div>
   )
