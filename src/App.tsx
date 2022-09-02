@@ -11,6 +11,7 @@ import CounterWithReducer from './components/CounterWithReducer'
 import MemoSample from './components/MemoSample'
 import Title from './components/UseEffectSample'
 import RefSample from './components/RefSample'
+import CountButton from './components/CountButton'
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <MemoSample></MemoSample>
         <Title></Title>
         <RefSample></RefSample>
+        <CountButton></CountButton>
       </header>
     </div>
   )
