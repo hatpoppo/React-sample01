@@ -13,14 +13,17 @@ const CountButton = () => {
     }
   }, [count])
   const disabled = count >= max
-  const text = disabled ? 'もうクリック出来ません' : `あなたは${count}回クリックしました`
+  const text = disabled
+    ? 'もうクリック出来ません'
+    : `あなたは${count}回クリックしました`
   return (
     <Button
       disabled={disabled}
       onClick={onClick}
-      coloer='red'
+      coloer="red"
       label={label}
-      text={text}></Button>
+      text={text}
+    ></Button>
   )
 }
 export default CountButton

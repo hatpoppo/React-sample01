@@ -16,9 +16,7 @@ const RefSample = () => {
       <h2>値参照</h2>
       <p onClick={increment}>num : {num.current} </p>
       <h2>DOM参照</h2>
-      <input
-        ref={inputEL}
-        type='text'></input>
+      <input ref={inputEL} type="text"></input>
       <button onClick={handleClick}>テキスト表示</button>
       <p>入力した値は： {text} </p>
     </div>

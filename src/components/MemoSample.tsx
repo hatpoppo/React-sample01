@@ -31,9 +31,7 @@ const Parent = () => {
       <p> {`現在のカウント：${count}`} </p>
       <p>
         <Fizz isFizz={isFizz}></Fizz>
-        <Bazz
-          isBazz={isBazz}
-          onClick={onBazzClick}></Bazz>
+        <Bazz isBazz={isBazz} onClick={onBazzClick}></Bazz>
       </p>
     </div>
   )

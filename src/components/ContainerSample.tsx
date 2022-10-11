@@ -13,7 +13,7 @@ const Container = (props: ContainerProps) => {
 }
 const Parent = () => {
   return (
-    <Container title='Hello'>
+    <Container title="Hello">
       <p>ここが子供要素</p>
     </Container>
   )

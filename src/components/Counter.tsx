@@ -13,19 +13,22 @@ const Counter = (props: CounterProps) => {
       <button
         onClick={() => {
           setCount(count + 1)
-        }}>
+        }}
+      >
         +（値版）
       </button>
       <button
         onClick={() => {
           setCount(count - 1)
-        }}>
+        }}
+      >
         -
       </button>
       <button
         onClick={() => {
           setCount((prevCount) => prevCount + 1)
-        }}>
+        }}
+      >
         +（関数版）
       </button>
     </div>

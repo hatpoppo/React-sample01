@@ -13,7 +13,8 @@ const Button = (props: ButtonProps) => {
       <button
         style={{ backgroundColor: coloer }}
         disabled={disabled}
-        onClick={onClick}>
+        onClick={onClick}
+      >
         {text}
       </button>
     </div>

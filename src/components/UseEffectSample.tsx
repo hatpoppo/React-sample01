@@ -10,7 +10,8 @@ const Title = () => {
       <button
         onClick={() => {
           setCount(count + 1)
-        }}>
+        }}
+      >
         クリック
       </button>
     </div>
