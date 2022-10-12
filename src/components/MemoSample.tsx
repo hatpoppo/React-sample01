@@ -17,6 +17,8 @@ const Bazz = memo<BazzProps>((props) => {
   console.log(`Bazzが再描画されました。isFizz=${isBazz}`)
   return <span onClick={onClick}>{isBazz ? 'Bazz' : ''}</span>
 })
+Bazz.displayName = 'Bazz'
+
 const Parent = () => {
   const [count, setCount] = useState(1)
   const isFizz = count % 3 === 0
