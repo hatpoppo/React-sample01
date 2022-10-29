@@ -6,7 +6,7 @@ import {
 } from '../components/ReactContent'
 
 /**
- * プロバイダーなしでコンテキストコンシューマをレンダリング
+ * プロバイダーなしでデフォルト値の場合のコンテキストコンシューマをレンダリング
  */
 test('NmaeConsumer shows default value', () => {
   render(<NameConsumer />)
@@ -16,7 +16,7 @@ test('NmaeConsumer shows default value', () => {
 })
 
 /**
- * プロバイダーなしでコンテキストコンシューマを使ったコンポーネントツリーのテスト
+ * プロバイダーでなくコンテキストコンシューマを使ったコンポーネントツリーのテスト
  */
 test('NameConsyumer shows value from provider', () => {
   render(
