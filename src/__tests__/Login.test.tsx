@@ -23,3 +23,26 @@ test('loads and displays greeting', async () => {
 
   expect(screen.getByRole('button')).toHaveAttribute('disabled')
 })
+
+test('handles server errer', async () => {
+  server.use(
+    rest.get('/login', (req, res, ctx) => {
+      return res(ctx.status(500))
+    })
+  )
+
+  render(<Login />)
+
+  userEvent.click(screen.getByText('Not Login'))
+
+  await waitFor(() => {
+    expect(screen.getByTestId('alert').innerHTML).toBe('Oops, failed to fetch!')
+  })
+
+  await waitFor(() => {
+    expect(screen.getByRole('button')).toBeInTheDocument()
+  })
+  await waitFor(() => {
+    expect(screen.getByRole('button')).not.toHaveAttribute('disabled')
+  })
+})

@@ -60,7 +60,7 @@ const Login = () => {
         {buttonText}
       </button>
       {login && <h1>{login}</h1>}
-      {error && <p role="alert">Oops, failed to fetch!</p>}
+      {error && <p data-testid="alert">Oops, failed to fetch!</p>}
     </div>
   )
 }
